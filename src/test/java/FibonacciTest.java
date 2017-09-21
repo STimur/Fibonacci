@@ -31,4 +31,11 @@ public class FibonacciTest {
     public void five() throws Exception {
         assertFibonacciOf(5, 5);
     }
+
+    @Test
+    public void acceptance() throws Exception {
+        assertFibonacciOf(10, 55);
+        assertFibonacciOf(11, 89);
+        assertFibonacciOf(12, 144);
+    }
 }
