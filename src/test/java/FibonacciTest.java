@@ -3,13 +3,17 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class FibonacciTest {
+    private void assertFibonacciOf(int n, int expected) {
+        assertEquals(expected, Fibonacci.of(n));
+    }
+
     @Test
     public void zero() throws Exception {
-        assertEquals(0, Fibonacci.of(0));
+        assertFibonacciOf(0, 0);
     }
 
     @Test
     public void one() throws Exception {
-        assertEquals(1, Fibonacci.of(1));
+        assertFibonacciOf(1, 1);
     }
 }
