@@ -4,8 +4,12 @@ public class Fibonacci {
     }
 
     private static int of(int a, int b, int n) {
-        if (n == 0)
-            return a;
-        return of(b, a + b, n - 1);
+        while (n != 0) {
+            int c = a + b;
+            a = b;
+            b = c;
+            n--;
+        }
+        return a;
     }
 }
