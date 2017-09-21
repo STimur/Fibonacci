@@ -26,4 +26,9 @@ public class FibonacciTest {
     public void three() throws Exception {
         assertFibonacciOf(3, 2);
     }
+
+    @Test
+    public void five() throws Exception {
+        assertFibonacciOf(5, 5);
+    }
 }
