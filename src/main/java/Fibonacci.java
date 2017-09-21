@@ -1,7 +1,11 @@
 public class Fibonacci {
     public static int of(int n) {
-        if (n <= 1)
-            return n;
-        return of(n - 1) + of(n - 2);
+        return of(0, 1, n);
+    }
+
+    private static int of(int a, int b, int n) {
+        if (n == 0)
+            return a;
+        return of(b, a + b, n - 1);
     }
 }
