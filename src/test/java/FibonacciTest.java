@@ -7,4 +7,9 @@ public class FibonacciTest {
     public void zero() throws Exception {
         assertEquals(0, Fibonacci.of(0));
     }
+
+    @Test
+    public void one() throws Exception {
+        assertEquals(1, Fibonacci.of(1));
+    }
 }
